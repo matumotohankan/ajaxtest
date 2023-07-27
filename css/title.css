@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+h2{
+    width: 100%;
+    color: white;
+    background-size: cover;
+    background-image: url(../img/tama.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.logo{
+ width: 80%;
+ height: 200px;
+ display: flex;
+ border: 10px double;
+ margin: auto;
+ background-color: bisque;
+}
+.logo1{
+ 
+ 
+}
+.logo2{
+    width: 60%;
+    font-size: 50px;
+    margin: auto;
+    font-family: fantasy;
+}
+.logo2 span{
+    color: brown;
+}
+.buro2{
+    width: 80%;
+    height: auto;
+    margin:0 auto;
+
+}
+.buro1{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: auto;
+    background-color: cadetblue;
+}
+.buro1 span{
+    font-size: 40px;
+    color: brown;
+}
+
+.buro3{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    background-color: aquamarine;
+}
+.buro32{
+    font-size: 28px;
+    display: block;
+}
+.buro32 p{
+    color: brown;
+    font-size: 40px;
+    
+}
+
+
+/* コンテナー */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* スライダーのwrapper */
+.infinite-slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+/* スライド */
+.infinite-slider .swiper-slide {
+  height: 320px !important; /* 高さを指定 */
+  width: auto !important;
+}
+
+/* スライド内の画像 */
+.infinite-slider .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.bezi{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    background-color: bisque;
+}
+.bezi1{
+  width: 20%;
+}
+.bezi2{
+   width: 90%;
+   font-size: 25px;
+   font-family: "あくあＰフォント","aqua_pfont";
+}
+.bezi2 p{
+    font-size: 35px;
+    color: brown;
+}
+.kazu{
+    width: 80%;
+    display: flex;
+    background-color: azure;
+    margin: auto;
+}
+.kazu1{
+
+}
+.kazu2{
+    width: 60%;
+    font-size: 30px;
+
+}
+.kazu2 span{
+    color: brown;
+    font-size: 35px;
+}
+.sugoi{
+    width: 80%;
+    display: flex;
+    background-color: azure;
+    margin: auto;
+}
+.sugoi2 p{
+   font-size: 40px;
+   color: brown;
+}
+.sugoi2{
+    width: 60%;
+    font-size: 30px;
+
+}
+.saigo{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: azure;
+}
+.saigo2{
+    font-size: 30px;
+
+}
+.saigo p{
+    font-size: 40px;
+    color: red;
+}
+.ganban{
+    width: 80%;
+    margin: auto;
+    display:flex ;
+    background-color: bisque;
+}
+.ganban1{
+    width: 80%;
+    font-size: 30ox;
+}
+.ganban p{
+    font-size: 40px;
+    color: red;
+}
+
+.gif {/*親div*/
+    width: 80%;
+    position: relative;/*相対配置*/
+    margin: auto;
+    
+    }
+  
+  .gif a {
+    position: absolute;/*絶対配置*/
+    color: red;/*文字は白に*/
+    font-size: 30px;
+    
+    top: 45%;
+    left: 42%;
+    bottom: ;
+    opacity: 0;
+  
+    /* アニメーション */
+    animation: fadeIn 10s linear;
+    animation-fill-mode: both;
+  }
+  /* ---------------------------- */
+  /* --- Animation --- */
+  /* ---------------------------- */
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  
+  .gif video {
+    width: 50%;
+    position:relative;
+    margin: auto;
+    margin-left: 25%;
+    }
