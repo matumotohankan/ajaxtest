@@ -1,22 +1,21 @@
-$("#load-comments-btn").on("click", function() {
-  $.ajax({
-    url: "get_comments.php", // コメントを取得するPHPファイルのパス
-    type: "GET",
-    dataType: "json",
-    data: { lastID: lastCommentID }, // 最後に取得したコメントのIDを送信
-    success: function(response) {
-      // 新しいコメントがあれば追加表示
-      if (response.length > 0) {
-        response.forEach(function(comment) {
-          $("#comments-container").append("<p>" + comment.message + "</p>");
-        });
+$(document).ready(function() {
+  // ボタンがクリックされた時の処理
+  $("#load-comments-btn").on("click", function() {
+    // コメントを全て削除
+    $("#comments-container").empty();
 
-        // 最後に取得したコメントのIDを更新
-        lastCommentID = response[response.length - 1].id;
+    // 新しいコメントを取得
+    $.ajax({
+      url: "get_new_comments.php",
+      type: "GET",
+      dataType: "json",
+      success: function(response) {
+        // 新しいコメントを表示
+        $("#comments-container").append(response.output);
+      },
+      error: function() {
+        console.error("コメントの取得に失敗しました。");
       }
-    },
-    error: function() {
-      console.error("コメントの取得に失敗しました。");
-    }
+    });
   });
 });
