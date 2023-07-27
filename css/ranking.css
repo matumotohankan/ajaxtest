@@ -1,0 +1,255 @@
+@charset "utf-8";
+h1{
+    background-color: red;
+}
+h2{
+  text-align: center;
+  color: red;
+  font-size: 50px;
+}
+.cd-fixed-bg.cd-bg-1{
+    width: 80%;
+    
+    margin: auto;
+
+}
+.arasuzi{
+    width: 70%;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: serif;
+    margin: auto;
+    text-align: center;
+    background:rgba(115,93,93,0.5);
+}
+.arasuzi span{
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+}
+.sugoi{
+    width: 80%;
+    font-weight: 800;
+    display: flex;
+    margin: auto;
+    background-color: beige;
+    background:rgba(115,93,93,0.5);
+}
+.sugoi2{
+    width: 65%;
+    font-size: 20px;
+    margin: auto;
+}
+.sugoi span{
+    font-size: 27px;
+    color: red;
+}
+
+
+
+
+
+.cd-fixed-bg {
+    position: relative;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+/*--固定背景01--*/
+.cd-fixed-bg.cd-bg-1  {
+    background-image: url('../img/enlarge_hukkatu.jpg');
+    
+  }
+  
+  /*--固定背景02--*/
+  .cd-fixed-bg.cd-bg-2  {
+    background-image: url('../img/zyanennba1.jpg');
+   
+    width: 80%;
+    margin: auto;
+    
+  }
+  .sugoi20{
+    
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 200px;
+    
+  }
+  .sugoi20 p{
+    font-size: 30px;
+    
+    background:rgba(115,93,93,0.5);
+  }
+
+  .bezi{
+    width: 60%;
+    
+    display: flex;
+    margin: auto;
+   
+    padding-left: 100px;
+    
+  }
+  .bezi{
+    width: 60%;
+    margin-bottom: px;
+  }
+  .bezi p{
+    font-size: 30px;
+    background:rgba(115,93,93,0.5);
+  }
+  /*--固定背景03--*/
+  .cd-fixed-bg.cd-bg-3  {
+    background-image: url('../img/zyanennba.jpg');
+   width: 80%;
+   margin: auto;
+  }
+.sugoi31{
+   width: 70%;
+   display: flex;
+   margin: auto;
+   margin-bottom: 200px;
+   
+   
+}
+
+.bezi31{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.bezi32{
+  width: 80%;
+  font-size: 30px;
+  text-align: right;
+  background:rgba(115,93,93,0.5);
+}
+.sugoi33{
+  font-size: 30px;
+  
+  background:rgba(115,93,93,0.5);
+}
+
+  
+  /*--固定背景02--*/
+  .cd-fixed-bg.cd-bg-6  {
+    background-image: url('../img/gokutobezi.jpg'); 
+    width: 80%; 
+    margin: auto;
+  }
+.arasuzi2{
+  width: 70%;
+  font-size: 30px;
+  font-weight: 1000;
+  font-family: serif;
+  margin: auto;
+  text-align: center;
+  background:rgba(115,93,93,0.5);
+  border-radius: 50px;
+  font-family: serif;
+} 
+.arasuzi2 span{
+  font-size: 38px;
+  color: red;
+}
+
+.sugoi{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  background-color:rgba(115,93,93,0.5);
+}
+
+
+
+
+
+
+  /*--固定背景03--*/
+  .cd-fixed-bg.cd-bg-7  {
+    background-image: url('../img/namida.jpg');
+    width: 80%;
+    margin: auto;
+    
+  }
+  .arasuzi3{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    background:rgba(115,93,93,0.5);
+    font-weight: 800;
+    font-family: serif;
+  }
+  .arasuzi3 span{
+    font-size: 40px;
+    color: red;
+  }
+
+    /*--固定背景02--*/
+    .cd-fixed-bg.cd-bg-9  {
+        background-image: url('../img/ezgif.com-gif-to-mp4.gif');
+        width: 80%;
+        margin: auto;
+        
+      }
+      
+    .sugoi34{
+      font-size: 30px;
+      
+    }
+
+
+    .sugoi36{
+      margin-top: 300px;
+      display: flex;
+      text-align: center;
+      width: 80%;
+      margin-left: 200px;
+    }
+    .gif {/*親div*/
+      width: 80%;
+      position: relative;/*相対配置*/
+      margin: auto;
+      
+      }
+    
+    .gif a {
+      position: absolute;/*絶対配置*/
+      color: red;/*文字は白に*/
+      font-size: 30px;
+      
+      top: 45%;
+      left: 42%;
+      
+      opacity: 0;
+    
+      /* アニメーション */
+      animation: fadeIn 10s linear;
+      animation-fill-mode: both;
+    }
+    /* ---------------------------- */
+    /* --- Animation --- */
+    /* ---------------------------- */
+    @keyframes fadeIn{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+  
+    
+    .gif video {
+      width: 50%;
+      position:relative;
+      margin: auto;
+      margin-left: 25%;
+      }
