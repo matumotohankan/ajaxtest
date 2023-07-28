@@ -30,39 +30,9 @@
     
    
 
-    
-    <?php
-
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'kansou';
-$con = mysqli_connect($host, $username, $password, $database);
-
-if (!$con) {
-  exit('データベースに接続できませんでした。');
-}
-
-mysqli_set_charset($con, 'utf8');
-
-$query = "SELECT * FROM messages WHERE visible = 1 ORDER BY no DESC";
-$result = mysqli_query($con, $query);
-if (!$result) {
-  exit('クエリの実行に失敗しました。');
-}
-
-while ($data = mysqli_fetch_array($result)) {
-  echo "<p>\n";
-  echo '<strong>[No.' . $data['no'] . '] ' . htmlspecialchars($data['name'], ENT_QUOTES) . ' ' . $data['created'] . "</strong><br />\n";
-  echo "<br />\n";
-  echo nl2br(htmlspecialchars($data['message'], ENT_QUOTES));
-  echo "</p>\n";
-}
-
-mysqli_close($con);
-
-?>
 </div>
+    
+
 <button id="load-comments-btn">新しいコメントを読み込む</button>
 <form action="regist.php" method="post">
   名前：<br />
