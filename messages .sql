@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 -- データベース: `kansou`
 --
 
+CREATE DATABASE IF NOT EXISTS `kansou` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `kansou`;
 -- --------------------------------------------------------
 
 --
