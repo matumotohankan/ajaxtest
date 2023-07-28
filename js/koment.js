@@ -17,5 +17,6 @@ $(document).ready(function() {
         console.error("コメントの取得に失敗しました。");
       }
     });
+    
   });
 });
